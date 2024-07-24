@@ -1,11 +1,5 @@
 package java101_projects;
 
-import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class DateOfBirth {
@@ -14,6 +8,7 @@ public class DateOfBirth {
         Scanner scanner = new Scanner(System.in);
         String day, month;
         int dayInt, monthInt;
+        System.out.print("Doğum Tarihiniz(01/01/2000 formatında): ");
         String[] list = scanner.nextLine().split("/");
         String regex = "^0";
         day = list[0].replaceFirst(regex, "");
