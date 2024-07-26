@@ -1,10 +1,7 @@
 package java101_projects;
 
-import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
-import java.text.FieldPosition;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class FlightTicketPrice {
