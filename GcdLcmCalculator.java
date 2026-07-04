@@ -23,9 +23,11 @@ public class GcdLcmCalculator {
             mNum = num1;
         else
             mNum = num2;
-        for (int i = 1; i <= mNum; i++) {
+        int i = 1;
+        while(i <= mNum) {
             if (num1%i == 0 && num2%i == 0)
                 divisor = i;
+            i++;
         }
         return divisor;
     }
@@ -37,11 +39,13 @@ public class GcdLcmCalculator {
             mNum = num1;
         else
             mNum = num2;
-        for (int i = mNum; i <= (num1*num2); i++) {
+        int i = mNum;
+        while(i <= (num1*num2)) {
             if (i%num1 == 0 && i%num2 == 0) {
                 multiple = i;
                 break;
             }
+            i++;
         }
         return multiple;
     }
